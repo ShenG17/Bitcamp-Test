@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 1440px;
+    height: 180px;
+
+    /* Very Dark Blue (main BG) */
+
+    background: #0D192C;
+}
+
+.wrapper{
+    position: absolute;
+    left: 40%;
+    right: 120%;
+    top: 50%;
+    bottom: 0%;
+    width: 350px;
+    height: 596px;
+
+    /* Very Dark Blue (card BG) */
+
+    background: #15263F;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+}
+
+.photo{
+    position: absolute;
+    margin-left: 40%;
+    right: 6.86%;
+    margin-top: 6.03%;
+    bottom: 45.3%;
+
+    background: url(.png);
+    border-radius: 8px;
+    height: 302px;
+    width: 302px;
+    left: 24px;
+    top: 24px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.8s;
+    
+}
+.photo:hover {
+    filter: brightness(150%) saturate(180%) hue-rotate(180deg);
+    filter: opacity(0.7) drop-shadow(0 0 0 cyan);
+  }
+
+.article{
+    color: #fff;
+    height: 28px;
+    width: 302px;
+    left: 24px;
+    top: 350px;
+    position: absolute;
+    margin-left: 40%;
+    right: 6.86%;
+    margin-top: 5.72%;
+    bottom: 36.58%;
+
+    /* Heading */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    transition: 0.3s ease-in-out;
+}
+
+.article:hover{
+    color: cyan;
+}
+
+.paragraph{
+    position: absolute;
+    height: 52px;
+    left: 41.6%;
+    right: 6.86%;
+    top: calc(210% - 52px/2 + 122px);
+
+    /* Body */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+
+
+    /* Soft Blue */
+
+    color: #8BACD9;
+}
+
+.price{
+    position: absolute;
+    height: 20px;
+    left: 41.8%;
+    right: 2.07%;
+    top: calc(305% - 10px/2);
+
+    /* Caption (Bold) */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Cyan */
+
+    color: #00FFF8;
+}
+
+.time-left{
+    position: absolute;
+    height: 20px;
+    left: 56.62%;
+    right: 0.33%;
+    top: calc(310% - 20px/2);
+
+    /* Caption */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Soft Blue */
+
+    color: #8BACD9;
+}
+
+hr{
+    height: 1px;
+    width: 302px;
+    left: 24px;
+    top: 514px;
+    border-radius: 0px;
+    position: absolute;
+    left: 41.7%;
+    right: 6.86%;
+    top: calc(335% - 20px/2);
+    bottom: 13.59%;
+    border-color: #2E405A;;
+}
+
+.avatar{
+    height: 33px;
+    width: 33px;
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 41.5%;
+    right: 83.71%;
+    top: calc(345% - 20px/2);
+    bottom: 5.37%;
+
+    background: url();
+    /* White */
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+}
+
+#jules-wyvern {
+    position: absolute;
+    height: 20px;
+    left: 645px;
+    right: 55.25%;
+    top: calc(348% - 20px/2);
+
+    /* Caption */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Soft Blue */
+
+    color: #8BACD9;
+    white-space: nowrap;
+}
+
+.soft-color{
+    color:#fff;
+    position: absolute;
+    left: 80px;
+    transition: color 0.8s ease-in-out;
+}
+
+.soft-color:hover{
+    color: cyan;
+}
+
+.attribution{
+    position: absolute;
+    height: 20px;
+    left: 40px;
+    right: -2%;
+    top: calc(25% - 20px/2);
+
+    /* Caption */
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+a:hover{
+    color: cyan;
+}
+
+@keyframes lightning {
+    0% {
+      color: cyan;
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      color: cyan;
+    }
+
+}
+
+.author {
+    animation: lightning 2s linear infinite;
+  }
